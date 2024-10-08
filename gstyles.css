@@ -1,17 +1,13 @@
 body {
-    text-align: center;
-    background-color: black;
-    color: white;
+    margin: 0;
+    overflow: hidden;
 }
 canvas {
-    border: 1px solid white;
-    background-color: #1a1a1a;
     display: block;
-    margin: 0 auto;
 }
-button {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
+#speedControl {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
 }
