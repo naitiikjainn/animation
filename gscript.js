@@ -20,7 +20,6 @@ for (var i = 0; i < numStars; i++) {
         z: Math.random() * canvas.width
     });
 }
-
 function animate() {
     //first we have to fill the entire canvas with black color
     c.fillStyle = 'black';
@@ -29,8 +28,9 @@ function animate() {
     c.fillStyle = 'white';
     for (var i = 0; i < stars.length; i++) {
         var star = stars[i];
-        //
+        //jo jitna dur uski z value utni kam hogi and k value utna zyada hoga
         var k = canvas.width / star.z;
+        //suppose k ~ 0 then we have to move the star to the center of the screen so we have to add canvas.width/2 to x and canvas.height/2 to y
         var x = star.x * k + canvas.width / 2;
         var y = star.y * k + canvas.height / 2;
         var r = 1 * k;
